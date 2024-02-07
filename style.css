@@ -1,0 +1,127 @@
+/* style.css */
+
+body {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    margin-top: 10vh;
+    text-align: center;
+    color: white;
+}
+
+#contendhead {
+    font-size: 10vw;
+}
+
+.Bodycontai {
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+.No {
+    width: 30vw;
+    height: 10vh;
+    font-size: 2vw;
+    border-radius: 20px;
+    background-color: #e4d210;
+    color: #fff;
+    font-weight: bold;
+}
+
+.Yes {
+    width: 50vw;
+    height: 10vh;
+    font-size: 2vw;
+    border-radius: 20px;
+    background-color: #d70909;
+    color: #fff;
+    font-weight: bold;
+}
+
+#footer-image {
+    width: 100vw;
+}
+
+@media screen and (max-width: 600px) {
+    #contendhead {
+        font-size: 5vw;
+    }
+    .No {
+        width: 40vw;
+        font-size: 3vw;
+    }
+    .Yes {
+        width: 70vw;
+        font-size: 3vw;
+    }
+}
+.scripcontainer{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#rerollimg{
+    height: 156px;
+    
+}
+/* Thêm keyframes để định nghĩa hiệu ứng mở */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Bắt đầu với opacity = 0 (ẩn) */
+        transform: scale(0.8); /* Bắt đầu với scale nhỏ hơn */
+    }
+    to {
+        opacity: 1; /* Kết thúc với opacity = 1 (hiển thị) */
+        transform: scale(1); /* Kết thúc với scale bình thường */
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1; /* Bắt đầu với opacity = 1 (hiển thị) */
+        transform: scale(1); /* Bắt đầu với scale bình thường */
+    }
+    to {
+        opacity: 0; /* Kết thúc với opacity = 0 (ẩn) */
+        transform: scale(0.8); /* Kết thúc với scale nhỏ hơn */
+    }
+}
+
+
+.modal-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 728px;
+    height: 702px;;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out; /* Sử dụng hiệu ứng fadeIn trong 0.3s */
+}
+
+#pay{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background: #ff02a1cc;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.modal-dialog.hidden {
+    animation: fadeOut 0.3s ease-in-out; /* Sử dụng hiệu ứng fadeOut khi ẩn dialog */
+}
+.hidden {
+    display: none;
+}
+
